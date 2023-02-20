@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:id="@+id/instruction_text_view"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="You are now a cat-like being. You have 9 lives to continue to waste. Let's have some fun. I'm seriously thinking a number between 1 and 50 right now; if you can't figure out what it is, you'll lose lives."
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input_number_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instruction_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:inputType="number"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/guess_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_number_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Guess"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/output_text_view"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/output_text_view_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-85dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/try_again_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_number_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Try Again"
+        android:visibility="invisible"
+        android:textSize="24sp"  />
+
+</RelativeLayout>
